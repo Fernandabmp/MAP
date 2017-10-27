@@ -2,7 +2,6 @@ package br.padrao.templateMethod;
 
 public abstract class CapitalTemplate {
 	
-
 	protected double riskFactorFor(Loan loan) {
 		return 0;
 	}
@@ -16,7 +15,6 @@ public abstract class CapitalTemplate {
 	}
 	
 	public double capitalTemplate(Loan loan){
-        return(duration(loan) * riskFactorFor(loan) * capital(loan));
-    }
-	
+        return (duration(loan) * riskFactorFor(loan));
+    }	
 }	
