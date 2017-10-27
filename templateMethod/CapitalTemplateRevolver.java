@@ -8,7 +8,7 @@ public class CapitalTemplateRevolver extends CapitalTemplate {
 	}
 
 	public double capital(Loan loan) {
-        return (loan.getoutstandingRiskAmount() * duration(loan) * riskFactorFor(loan) + 
+        return (loan.getoutstandingRiskAmount() * capitalTemplate(loan) + 
         		loan.unusedRiskAmount() * duration(loan) * unusedRiskFactor(loan));	
 	}	
 }
